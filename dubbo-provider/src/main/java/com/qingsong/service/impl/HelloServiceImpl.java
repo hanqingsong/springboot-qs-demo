@@ -1,6 +1,5 @@
 package com.qingsong.service.impl;
 
-// import com.alibaba.dubbo.config.annotation.Service;
 import com.qingsong.service.HelloService;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class HelloServiceImpl implements HelloService {
     @Override
     public String sayHello(String name) {
-        String value = "dubbo-consumer sayHello: " + name;
+        String value = "dubbo-provider sayHello: " + name;
         System.out.println(value);
         return value;
     }
