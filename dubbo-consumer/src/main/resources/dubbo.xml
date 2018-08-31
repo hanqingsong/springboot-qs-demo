@@ -9,6 +9,6 @@
     <dubbo:registry protocol="${dubbo.registry.protocol}" address="${dubbo.registry.address}" />
 
     <!--依赖服务-->
-    <dubbo:reference id="helloService" interface="com.qingsong.service.HelloService" />
+    <!--<dubbo:reference id="helloService" interface="com.qingsong.service.HelloService" />-->
 
 </beans>

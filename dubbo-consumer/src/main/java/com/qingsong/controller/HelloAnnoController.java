@@ -1,7 +1,7 @@
 package com.qingsong.controller;
 
-import com.qingsong.service.HelloService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.qingsong.service.HelloAnnoService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
  * @author hanqingsong
  * @date 18/8/30
  */
-// @RestController
-public class HelloController {
+@RestController
+public class HelloAnnoController {
 
-    @Autowired
-    private HelloService helloService;
+    @Reference(version = "0.0.1")
+    private HelloAnnoService helloService;
 
     @RequestMapping("/hello")
     public String hello(String name){
