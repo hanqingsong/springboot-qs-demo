@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloAnnoController {
 
-    @Reference(version = "0.0.1")
+    @Reference(version = "0.0.2",check = true)
     private HelloAnnoService helloService;
 
     @RequestMapping("/hello")
