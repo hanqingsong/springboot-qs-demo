@@ -16,7 +16,7 @@ logging:
   path: logs
   pattern:
     file: '%d{ISO8601} [%-16.16thread] %-5level -- %-60.60class - %M [%4line] -- %X{request-id} | %msg%n'
-debug: true
+debug: false
 ---
 #开发环境配置
 spring:
