@@ -56,10 +56,19 @@ public class IndexController {
     /**
      * 不好使
      * 不编译到 /META-INF/resources/WEB-INF/jsp/下
+     * 默认资源路径 {
+        "classpath:/META-INF/resources/", "classpath:/resources/",
+        "classpath:/static/", "classpath:/public/" };
      * @return
      */
     @RequestMapping("/index4")
     public ModelAndView index4(){
         return new ModelAndView("index4");
+    }
+
+
+    @RequestMapping("/index5")
+    public ModelAndView index5(){
+        return new ModelAndView("index5");
     }
 }
