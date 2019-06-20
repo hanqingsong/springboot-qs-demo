@@ -1,7 +1,6 @@
 package com.qingsong.listener;
 
 import com.qingsong.event.UserRegisterEvent;
-import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 @Component
